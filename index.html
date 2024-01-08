@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <h1>Hangman</h1>
+
+    <div id="wordDisplay">
+        
+    </div>
+    
+    <input pattern="[A-Za-z]" type="text" id="letterInput" maxlength="1" placeholder="Guess a letter">
+    <button onclick="submitGuess()">Submit</button>
+
+    <div>
+        <button onclick="initializeGame()">New Word</button>
+    </div>
+
+    <div>
+        <p>Guesses Left: <span id="guessesLeft">6</span></p>
+    </div>
+
+    <div>
+        <p>Already Guessed Letters: <span id="guessedLettersSpan"></span></p>
+    </div>
+
+    <div id="message"></div>
+
+</body>
+
+</html>
