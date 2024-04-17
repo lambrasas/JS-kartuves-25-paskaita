@@ -1,23 +1,4 @@
-const words = [
-    "apple",
-    "banana",
-    "grape",
-    "melon",
-    "peach",
-    "berry",
-    "lemon",
-    "mango",
-    "kiwi",
-    "plum",
-    "cherry",
-    "pear",
-    "date",
-    "fig",
-    "olive",
-    "orange",
-    "papaya",
-    "avocado"
-];
+
 
 let selectedWord;
 let guessedLetters;
@@ -49,7 +30,7 @@ function initializeGame()
 
     getRandomWord().then(word => {
         selectedWord = word
-        // console.log(selectedWord)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! YOU NEED THIS TO NOT DIE
+        console.log(selectedWord)
     
         for(let i=0;i<selectedWord.length;i++){
             let letterSpace=document.createElement("span")
